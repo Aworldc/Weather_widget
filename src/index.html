@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather widget</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body style="-webkit-app-region: drag">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/n37d81144d96/melbourne/" data-label_1="MELBOURNE" data-label_2="WEATHER" data-font="Open Sans" data-theme="orange" >MELBOURNE WEATHER</a>
+        <span style="z-index: 1000;" class="xb" onclick="ipcRenderer.send('close-me', '')">X<div style="z-index: 1000;" class="trigdiv"></div></span>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+    <script>
+      const { ipcRenderer } = require('electron');
+    </script>
+  </body>
+</html>
