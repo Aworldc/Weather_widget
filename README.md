@@ -1,3 +1,7 @@
+# ***WARNING: DEPRECIATED: Weatherwidget will soon be replaced by a new program and thus should not be used. This repository will soon be archived***
+
+---
+
 # Weather widget
 an electron-based desktop window for weatherwidget.io
 
